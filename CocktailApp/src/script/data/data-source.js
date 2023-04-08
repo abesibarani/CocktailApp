@@ -1,6 +1,6 @@
 class DataSource {
   static searchCocktail(keyword) {
-    return fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${keyword}`)
+    return fetch(`http://www.omdbapi.com/?s=${keyword}&apikey=772f6bc6`)
       .then((response) => {
         return response.json();
       })
