@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Montserrat:wght@300;600&family=Quicksand:wght@400;600&family=Rampart+One&family=Rubik+Iso&family=Shantell+Sans:ital,wght@1,300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Quicksand", "Bitter", "Montserrat", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 15vh;
+  background-color: navy;
+  background-size: cover;
+  background-position: center;
+}
+
+.navigation {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-size: 38px;
+  color: white;
+  font-weight: bold;
+  width: 120px;
+  cursor: pointer;
+}
+.navigation ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navigation ul li a {
+  color: white;
+  text-transform: uppercase;
+}
+.navigation ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #3a98b9;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navigation ul li:hover::after {
+  width: 100%;
+}
+
+header .header-content {
+  position: relative;
+  text-align: center;
+  padding: 100px 15px 100px;
+  width: 100%;
+}
+
+header .header-content .header-content-inner h1 {
+  font-weight: 700;
+  text-transform: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+main {
+  width: 90%;
+  max-width: 800px;
+  margin: 32px auto;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section {
+  padding: 50px 0;
+}
+
+section h3 {
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+
+section h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  height: 1px;
+  background-color: #ddd;
+  left: calc(50% - 60px);
+}
+
+section h3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  width: 40px;
+  height: 4px;
+  background-color: #3a98b9;
+  left: calc(50% - 20px);
+}
+
+#about p {
+  text-align: center;
+  text-indent: 30px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.column {
+  width: 33.33%;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  padding: 50px 10px;
+}
+
+.column h4 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #333;
+  padding: 30px;
+  text-align: center;
+}
+
+footer small {
+  color: #fff;
+}
+
+cocktail-list {
+  display: block;
+  margin-top: 32px;
+  width: 100%;
+  padding: 16px;
+  font-family: "Shantell Sans", "Quicksand", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .column {
+    width: 100%;
+  }
+}
